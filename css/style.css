@@ -1,0 +1,413 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topnav {
+    display: none;
+}
+
+#nav {
+    background-color: #471d54;
+    color: white;
+    list-style: none;
+    text-align: right;
+    padding: 10px;
+    vertical-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+#nav>ul>li {
+    display: inline-block;
+    padding-right: 70px;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+#nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav>ul>li>a:hover {
+    color: #db9df8;
+    text-decoration-line: none;
+}
+
+#nav ul li a,
+#nav ul li a:after,
+#nav ul li a:before {
+    transition: all .3s;
+}
+
+#nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #db9df8;
+    transition: width .3s;
+}
+
+#nav ul li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+#nav>img {
+    float: left;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+#animacija {
+    width: 500px;
+    height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+
+#o-nama {
+    background-color: #471d54;
+    color: white;
+    padding: 50px 0;
+}
+
+#naslov-o-nama {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.text-o-nama {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#containerPictures h2 {
+    text-align: center;
+    color: #471d54;
+}
+
+#containerCounters {
+    color: #471d54;
+    flex-wrap: nowrap;
+    display: inline-block;
+    clear: both;
+    padding: 30px;
+    justify-content: center;
+}
+
+.comitee {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    flex-wrap: nowrap;
+
+}
+
+.members {
+    height: 150px;
+    width: 150px;
+    flex-wrap: nowrap;
+    display: inline-block;
+    text-align: center;
+}
+
+.teams {
+    height: 150px;
+    width: 150px;
+    flex-wrap: nowrap;
+    text-align: center;
+    display: inline-block;
+}
+
+#containerInfo {
+    width: 100%;
+    height: auto;
+
+}
+
+#broj {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+}
+
+footer {
+    color: white;
+    background: #471d54;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 12px;
+}
+
+
+#misijaiciljevi {
+    background: white;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#misija {
+    padding-top: 30px;
+    float: left;
+    color: #471d54;
+}
+
+#ciljevi {
+    padding-top: 30px;
+    color: #471d54;
+    float: right;
+}
+
+#zasto {
+    padding-top: 30px;
+    background: #dbdde0;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 30px;
+}
+
+.zastosafon {
+    text-align: center;
+    height: 280px;
+    color: #471d54;
+}
+
+.projekti .clanovi-slika img {
+    width: 500px;
+    padding-top: 20px;
+}
+
+.projekti-tekst {
+    float: right;
+    color: #471d54;
+    text-align: center;
+}
+
+#fontv {
+    text-align: center;
+    color: #471d54;
+    padding: 20px;
+}
+
+#kartice {
+    overflow: hidden;
+    background-color: #D0D0D0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border: 0;
+}
+
+#kartice h2 {
+    text-align: center;
+    color: #471d54;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+iframe {
+    height: 450px;
+    width: 100%;
+}
+
+#kontakt {
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 30px;
+}
+
+.social {
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+.social i {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.social .fa-instagram {
+    padding-right: 0 !important;
+}
+
+.social a {
+    color: white;
+}
+
+.social a:hover {
+    color: gray;
+}
+
+footer .cr {
+    font-size: 14px;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.prvi-red {
+    padding-bottom: 20px;
+}
+
+.uo{
+    color:white;
+    overflow: hidden;
+    background-color: #471d54;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border: 0;
+}
+
+.uo h2{
+    padding-bottom: 20px;
+}
+
+/* .flip-container {
+    perspective: 1000px;
+} */
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+    transform-origin: 50%;
+}
+
+.flip-container,
+.front,
+.back {
+    width: 320px;
+    height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+
+}
+
+#slika{
+    height: 450px;
+}
+
+@media only screen and (max-width: 800px) {
+    #nav {
+        display: none;
+    }
+
+    #slika{
+        height: 150px;
+    }
+
+    #animacija {
+        max-width: 150px;
+        max-height: 150px;
+        padding-top: 0;
+        margin: 0;
+        padding-bottom: 100%;
+    }
+
+    .logo {
+        padding: 10px;
+        padding-bottom: 3px;
+        width: 150px;
+    }
+
+    .topnav {
+        display: flex;
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 5px 5px;
+        padding-right: 12px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        color: rgb(184, 56, 223);
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: rgb(184, 56, 223);
+        color: white;
+    }
+
+    .projekti .clanovi-slika {
+        width: 300px;
+    }
+
+    #fontv img {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        max-width: 350px;
+    }
+
+}

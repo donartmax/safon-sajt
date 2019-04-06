@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="slike/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="slike/favicon.png" type="image/x-icon"/>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/numscroller-1.0.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/countUp.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+    <title>SAFON | Studentska Asocijacija Fakulteta Organizacionih Nauka</title>
+</head>
+
+<body>
+
+
+    <div class="topnav">
+
+        <div id="myLinks">
+            <a href="#o-nama">O nama</a>
+            <a href="#zasto">Projekti</a>
+            <a href="#tim">Tim</a>
+            <a href="#kontakt">Kontakt</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <div id="nav">
+
+        <img src="slike/logoheader.png" onclick="playVideo()">
+        <ul>
+            <li><a href="#o-nama">O nama</a></li>
+            <li><a href="#zasto">Projekti</a></li>
+            <li><a href="#tim">Tim</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div id="animacija">
+            <video id="videowelcome" preload="auto" autoplay muted>
+
+                <source src="asocijacija.mp4" type="video/mp4">
+            </video>
+
+        </div>
+    </div>
+
+    <div id="o-nama">
+        <div class="container">
+            <p id="naslov-o-nama">O NAMA</p>
+            <p class="text-o-nama">Studentska Asocijacija Fakulteta Organizacionih Nauka predstavlja organizaciju
+                posvećenu studentima i najvažnijim studentskim pitanjima. U svojim projektima spaja znanja iz oba
+                studijska programa, ISIT-a i Menadžmenta, kao i organizacije.</p>
+            <p class="text-o-nama">
+                SAFON podstiče praktičnu primenu stečenih znanja i teži ka tome da u okviru svojih projekata omogući
+                što veći broj praksi za studente. SAFON promoviše kolegijalnost, međustudentsku saradnju i timski rad.
+            </p>
+        </div>
+
+    </div>
+
+    <div id="misijaiciljevi">
+        <div class="container">
+            <div id="picture">
+                <img id="slika" src="slike/itimen.jpg">
+            </div>
+            <div class="row">
+                <div id="misija" class="col-lg-6">
+                    <h3>MISIJA</h3>
+                    <p>
+                        Nastojimo da spojimo oba studijska smera FON-a u svojim projektima i podstaknemo studente na
+                        praktičnu primenu teorijskih znanja.<br>
+                        Projekte stvaramo prema potrebi studenata kako bi se usavršili i stekli dodatna iskustva iz
+                        oblasti
+                        informacionih tehnologija, menadžmenta i organizacije.<br>
+                        Naša misija se ogleda u pripremi studenata na izazove sa kojima će se susretati tokom građenja
+                        svoje profesonalne karijere i neprekidno usavršavanje njihovog znanja.<br>
+                    </p>
+                </div>
+
+                <div id="ciljevi" class="col-lg-6">
+                    <h3>CILJEVI</h3>
+                    <p>
+                        Prepoznatljivost po svojim projektima koji će svojim kvalitetom istovremeno podizati ugled i
+                        fakulteta i organizacije, prepoznatljiva po prilikama koje nudi studentima i svojim članovima,
+                        podigne nivo edukacije o savremenim trendovima poslovanja na fakultetu, približi studentima
+                        aspekt
+                        korišćenja informacionih tehnologija u menadžmentu, upotpuni znanja studenata i podstakne ih na
+                        kreativnost, inovativnost i adaptaciju na promene koje ih očekuju u poslovnom svetu.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="kartice">
+        <div class="container text-center">
+            <h2>Timovi<h2>
+                    <div class="row prvi-red">
+                        <div class="col-lg-6 flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="slike/it-100.jpg" alt="it">
+                                </div>
+                                <div class="back">
+                                    <img src="slike/itback.jpg" alt="it">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="slike/cr-100.jpg" alt="it">
+                                </div>
+                                <div class="back">
+                                    <img src="slike/crback.jpg" alt="it">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="slike/pr-100.jpg" alt="it">
+                                </div>
+                                <div class="back">
+                                    <img src="slike/prback.jpg" alt="it">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="slike/hr-100.jpg" alt="it">
+                                </div>
+                                <div class="back">
+                                    <img src="slike/hrback.jpg" alt="it">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="slike/logistika-100.jpg" alt="it">
+                                </div>
+                                <div class="back">
+                                    <img src="slike/logistikaback.jpg" alt="it">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <div id="zasto">
+        <div class="container">
+            <div class="zastosafon">
+                <h2>ZAŠTO SAFON?</h2>
+                <p>
+                    Članovi organizacije kroz svoj rad na projektima stiču neophodne organizacione veštine iz oblasti
+                    marketinga, IT-a, upravljanja ljudskim resursima, logistike i korporativnih odnosa. Fokusira se na
+                    stalno unapređivanje znanja i organizacionih veština kroz mesečne obuke, radionice i seminare.
+                    <br><br>
+                    Studentska Asocijacija Fakulteta organizacionih nauka pored svojih projekata posvećenim svim
+                    studentima FON-a organizuje i projekte posvećene samo svojim članovima, kako bi na pravi način
+                    usavršila svoje članove i omogućila istovremeni napredak, i organizacije i članovima.</p>
+            </div>
+
+            <div class="projekti">
+                <div class="row">
+                    <div class="col-lg-6 clanovi-slika">
+                        <img src="slike/clanovi.jpg">
+                    </div>
+                    <div class="projekti-tekst col-lg-6">
+                        <h2>NAŠI PROJEKTI</h2>
+                        <p>
+                            Kroz svoje projekte nudimo studentima priliku da steknu dodatna znanja iz oblasti IT-a i
+                            menadžmenta, da stečeno znanje usavrše kroz praktičnu primenu i da započnu svoj
+                            profesionalni
+                            razvoj već tokom studiranja.
+                            Fokusiramo se na one oblasti koje su manje pristupačne studentima FON-a, a koje su veoma
+                            perspektivne i rastuće u savremenom svetu poslovanja.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="fontv">
+                <div class="row">
+                    <div class="fontv-tekst col-lg-6">
+                        <h2>Šta je FONTV?</h2>
+                        <p>Projekat SAFON-a predstavlja medijsku platformu koja se bavi temama koje suznačajne i
+                            zanimljive
+                            za studente FON-a.Sadržaj se prikazuje u obliku video zapisa i izveštaja nakon intervjua.
+                            Članovi organizacionog tima rade na intervjuu i nakon toga pišu izveštaj sa intervjua.
+                            Ciljna
+                            grupa publike su tudenti FON-a, dok se za goste biraju bivši fonovci, top menadžeri, it
+                            stručnjaci… zavisno od teme kojom se bavi deo projekta.</p>
+                        <p>Kolege sa našeg fakulteta, koji su završili svoje studije i zaposleni su u poznatim
+                            kompanijama
+                            kroz intervjue će podeliti sa nama njihova iskustva tokom perioda studiranja na FON-u. Koje
+                            su
+                            to mogućnosti i poslovi koji nam se nude nakon studija? Kako će nam FON pomoći da se
+                            uklopimo u
+                            poslovno okruženje koje nas čeka? Naši gosti će odgovoriti na ova i još mnoga druga korisna
+                            pitanja.</p>
+                    </div>
+
+                    <div class="fontv-logo col-lg-6">
+                        <img src="slike/fontv-logo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="tim">
+        <div class="container text-center">
+            <div id="containerCounters">
+                <div class="comitee">
+                    <span style="font-size: 15px;"> Članova upravnog<br> odbora</span><br>
+                    <span class='numscroller' data-delay='1.7' data-increment='1' data-max='5' data-min='1' style="font-size: 70px;">5</span>
+                </div>
+                <div class="members">
+                    <span style="font-size:15px;"> Aktivnih<br> članova</span><br>
+
+                    <span class='numscroller' data-delay='5' data-increment='3' data-max='82' data-min='1' style="font-size: 70px;">82</span>
+                </div>
+                <div class="teams">
+                    <span style="font-size: 15px;">Timova</span><br>
+                    <span class='numscroller' data-delay='1.7' data-increment='1' data-max='5' data-min='1' style="font-size: 70px;">5</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="uo">
+        <div class="container text-center">
+            <h2>Timovi<h2>
+                    <div class="row prvi-red">
+                        <div class="col-lg-6 flip-container" ontouchstFart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="slike/david1.jpg" alt="it">
+                                </div>
+                                <div class="back">
+                                    <img src="slike/david2.jpg" alt="it">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="slike/sanja1.jpg" alt="it">
+                                </div>
+                                <div class="back">
+                                    <img src="slike/sanja2.jpg" alt="it">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="slike/milos1.jpg" alt="it">
+                                </div>
+                                <div class="back">
+                                    <img src="slike/milos2.jpg" alt="it">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="slike/hr-100.jpg" alt="it">
+                                </div>
+                                <div class="back">
+                                    <img src="slike/hrback.jpg" alt="it">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="slike/1.jpg" alt="it">
+                                </div>
+                                <div class="back">
+                                    <img src="slike/2.jpg" alt="it">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="containerInfo">
+            <div id="map">
+                <iframe allowfullscreen frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.3994008963637!2d20.473038915264205!3d44.77266218733984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70576248bf79%3A0xadaf5cff042d3bd0!2z0KTQsNC60YPQu9GC0LXRgiDQvtGA0LPQsNC90LjQt9Cw0YbQuNC-0L3QuNGFINC90LDRg9C60LA!5e0!3m2!1ssr!2srs!4v1546184961292"></iframe>
+            </div>
+            <div id="kontakt">
+                <p>Fakultet Organizacionih Nauka <br>
+                    Univerzitet u Beogradu <br>
+                    154, Jove Ilića <br>
+                    11 000 Beograd, Srbija</p>
+                <div class="social">
+                    <a href="mailto:studentskaasocijacijafona@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                    <a href="https://www.facebook.com/studentskaasocijacijafon/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/studentska-asocijacija-fon-a/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/studentskaasocijacijafona/" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <p class="cr">Copyright by Studentska Asocijacija Fakulteta Organizacionih Nauka</p>
+        </div>
+    </footer>
+
+    <script>
+        $(".card").flip({
+            axis: 'x',
+            trigger: 'hover',
+            reverse: true
+        });
+    </script>
+
+
+</body>
+
+
+
+</html>
