@@ -13,7 +13,7 @@ body {
 }
 
 #nav {
-    background-color: #471d54;
+    background-color: #212121;
     color: white;
     list-style: none;
     text-align: right;
@@ -80,12 +80,13 @@ body {
 }
 
 #o-nama {
-    background-color: #471d54;
-    color: white;
+    background-color: #212121;
+    color: #606161;
     padding: 50px 0;
 }
 
 #naslov-o-nama {
+    color: white;
     padding-top: 20px;
     text-align: center;
     font-size: 25px;
@@ -262,7 +263,11 @@ iframe {
 footer .cr {
     font-size: 14px;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 10px;
+}
+
+.org-cr{
+    background-color: #212121;
 }
 
 .prvi-red {
