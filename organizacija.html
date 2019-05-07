@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&amp;subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="icon" href="slike/favicon.png" type="image/x-icon"/>
-    <link rel="shortcut icon" href="slike/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="slike/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="slike/favicon.png" type="image/x-icon" />
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/numscroller-1.0.js"></script>
@@ -21,74 +22,111 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
-    <title>SAFON | Studentska Asocijacija Fakulteta Organizacionih Nauka</title>
+    <title>SAFON | Organizacija</title>
 </head>
 
 <body>
 
+    <!--Navbar-->
+    <nav class="navbar mb-4 text-light">
 
-    <div class="topnav">
+            <!-- Navbar brand -->
+            <img src="slike/logoheader.png" onclick="window.location.href='index.html'">
+    
+            <!-- Collapse button -->
+            <button class="navbar-toggler first-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
+            </button>
+    
 
-        <div id="myLinks">
-            <li><a href="organizacija.html">Organizacija</a></li>
-            <li><a href="/index.html#tim">Timovi</a></li>
-            <li><a href="/index.html#projekti">Projekti</a></li>
-            <li><a href="/index.html#partneri">Partneri</a></li>
-            <li><a href="/index.html#kontakt">Kontakt</a></li>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Početna strana</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#tim">Timovi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#projekti">Projekti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#kontakt">Kontakt</a>
+                </li>
+            </ul>
+
         </div>
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+    </nav>
 
 
     <div id="nav">
 
-        <img src="slike/logoheader.png" onclick="playVideo()">
+        <img src="slike/logoheader.png" onclick="window.location.href='index.html'">
         <ul>
-            <li><a href="organizacija.html">Organizacija</a></li>
-            <li><a href="/index.html#tim">Timovi</a></li>
-            <li><a href="/index.html#projekti">Projekti</a></li>
-            <li><a href="/index.html#partneri">Partneri</a></li>
-            <li><a href="/index.html#kontakt">Kontakt</a></li>
+            <li><a href="index.html">Početna strana</a></li>
+            <li><a href="index.html#tim">Timovi</a></li>
+            <li><a href="index.html#projekti">Projekti</a></li>
+            <!-- <li><a href="index.html#partneri">Partneri</a></li> -->
+            <li><a href="index.html#kontakt">Kontakt</a></li>
         </ul>
     </div>
-   
+
+    <div id="organizacija">
+        <img src="slike/organizacija.jpeg" alt="organizacija" style=" width:100%;">
+
+    </div>
+
 
     <div id="o-nama">
         <div class="container">
-            <p id="naslov-o-nama">Studentska Asocijacija FON-a</p>
-            <p class="text-o-nama">Studentska Asocijacija Fakulteta Organizacionih Nauka predstavlja organizaciju
-                posvećenu studentima i najvažnijim studentskim pitanjima. U svojim projektima spaja znanja iz oba
-                studijska programa, ISIT-a i Menadžmenta, kao i organizacije.</p>
-            <p class="text-o-nama">
+            <h2 class="naslov-h2 text-center beli-tekst">Ko smo mi?</h2>
+            <p class="text-o-nama text-justify">Studentska Asocijacija Fakulteta organizacionih nauka predstavlja
+                studentsku
+                organizaciju posvećenu studentima FON-a, sa ciljem unapređenja kvaliteta studiranja, podsticanje
+                studentske inicijative, međustudentske saradnje i profesionalnog razvoja tokom studiranja. </p>
+            <p class="text-o-nama text-justify">
                 SAFON podstiče praktičnu primenu stečenih znanja i teži ka tome da u okviru svojih projekata omogući
-                što veći broj praksi za studente. SAFON promoviše kolegijalnost, međustudentsku saradnju i timski rad.
+                veliki broj praksi za studente, da promoviše kolegijalnost, međustudentsku saradnju i timski rad. U
+                svojim projektima promoviše liderstvo I preduzetnički duh sa namerom da približi studentima aspekt
+                korišćenja informacionih tehnologija u menadžmentu.
+            </p>
+            <p class="text-o-nama text-justify">
+                SAFON kao svoje ciljeve vidi da bude prepoznatljiva po svojim projektima koji će svojim kvalitetom
+                istovremeno podizati ugled i fakulteta i organizacije, prepoznatljiva po prilikama koje nudi studentima
+                i svojim članovima, podigne nivo edukacije o savremenim trendovima poslovanja na fakultetu i podstakne
+                ih na kreativnost, inovativnost i adaptaciju na promene koje ih očekuju u poslovnom svetu.
             </p>
         </div>
 
     </div>
 
-    <div id="misijaiciljevi">
+    <div id="misijaiciljevi" class="parallax-misija">
         <div class="container">
             <div class="row">
                 <div id="misija" class="col-lg-6">
-                    <h3>MISIJA</h3>
-                    <p>
-                        Nastojimo da spojimo oba studijska smera FON-a u svojim projektima i podstaknemo studente na
-                        praktičnu primenu teorijskih znanja.<br>
-                        Projekte stvaramo prema potrebi studenata kako bi se usavršili i stekli dodatna iskustva iz
-                        oblasti
-                        informacionih tehnologija, menadžmenta i organizacije.<br>
-                        Naša misija se ogleda u pripremi studenata na izazove sa kojima će se susretati tokom građenja
-                        svoje profesonalne karijere i neprekidno usavršavanje njihovog znanja.<br>
+                    <div class="row centar">
+                        <img src="slike/idea-01.png" style="height:30%; width:30%; ">
+                    </div>
+                    <h3 class="naslov-h2">MISIJA</h3>
+                    <p class="italic text-justify">
+                        “Usmeravanjem na preduzetničko razmisljanje, timski duh i liderstvo kroz naše projekte želimo da
+                        podstaknemo studente da budu proaktivni i pomognemo im da znanja iz oblasti informacionih
+                        tehnologija i menadzmenta primene u praksi.”
                     </p>
                 </div>
 
                 <div id="ciljevi" class="col-lg-6">
-                    <h3>CILJEVI</h3>
-                    <p>
+                    <div class="row centar">
+                        <img src="slike/idea-02.png" style="height:30%; width:30%;">
+                    </div>
+                    <h3 class="naslov-h2">CILJEVI</h3>
+                    <p class="italic text-justify">
                         Prepoznatljivost po svojim projektima koji će svojim kvalitetom istovremeno podizati ugled i
                         fakulteta i organizacije, prepoznatljiva po prilikama koje nudi studentima i svojim članovima,
                         podigne nivo edukacije o savremenim trendovima poslovanja na fakultetu, približi studentima
@@ -101,6 +139,95 @@
         </div>
 
     </div>
+
+    <div id="rec">
+        <div class="container">
+            <h2 class="naziv text-center naslov-h2">Reč osnivača</h2>
+            <div class="row david">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4  text-center">
+                    <img src="slike/david.jpg" alt="David">
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col">
+                    <h3 class="naziv">David Ković</h3>
+                    <h5 class="titule">Predsednik</h5>
+                    <p class="italic text-justify">“Razmišljajući o organizacionim naukama prve asocijacije koje su mi
+                        padale na
+                        pamet su liderstvo
+                        i timski rad. To je ono što odvaja pojedinca od grupe I grupu od tima sa određenim ciljem.
+                        Mislim da je Studentska Asocijacija Fakulteta organizacionih nauka upravo to, tim lidera koji
+                        imaju jasan cilj ispred sebe i koji vizionarskim pristupom stečena znanja iz oblasti IT-a I
+                        menadžmenta primenjuju u praksi. “</p>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col">
+                    <h3 class="naziv">Sanja Dinić</h3>
+                    <h5 class="titule">Potpredsednica</h5>
+                    <p class="italic text-justify">"Osnovati novu organizaciju, krenuti potpuno ispocetka, i napraviti
+                        nesto ni iz
+                        čega, nije bio lak
+                        posao.. Tokom stvaranja organizacije, i mi smo sa njom rasli, naučili dosta toga, stekli nova
+                        iskustva i doživotne prijatelje. Često me pitaju, šta čini Studentsku Asocijaciju? Da li su to
+                        projekti? Osnivaci? Upravni odbor? Vremenom sam shvatila i sama šta čini Studentsku Asocijaciju-
+                        to su ljudi, svi ljudi koji čine organizaciju. Najveću inspiraciju dobijam upravo u radu sa
+                        članovima Asocijacije. Svako je ostavio svoj trag, doprineo na svoj način, i bas tako,
+                        kroz vreme, stvorio Studentsku Asocijaciju."</p>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center">
+                    <img src="slike/sanja.jpg" alt="Sanja">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="uo">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <img src="slike/david1.jpg" alt="it">
+                    <p class="uo-naziv">David Ković</p>
+                    <p class="uo-titula">Predsednik</p>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <img src="slike/sanja1.jpg" alt="it">
+                    <p class="uo-naziv">Sanja Dinić</p>
+                    <p class="uo-titula">Potpredsednik</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center">
+                    <img src="slike/milos1.jpg" alt="it">
+
+                    <p class="uo-naziv">Miloš Todorović</p>
+                    <p class="uo-titula">Finansije</p>
+
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center">
+                    <img class="uo-slika" src="slike/kristina.png" alt="it">
+
+                    <p class="uo-naziv">Kristina Kozomara</p>
+                    <p class="uo-titula">Ljudski resursi</p>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center">
+                    <img src="slike/1.jpg" alt="it">
+
+                    <p class="uo-naziv">Veljko Ranđelović</p>
+                    <p class="uo-titula">Korporativni odnosi</p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
 
     <footer>
         <p class="cr org-cr">Copyright by Studentska Asocijacija Fakulteta Organizacionih Nauka</p>

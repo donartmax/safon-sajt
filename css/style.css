@@ -8,8 +8,56 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.topnav {
-    display: none;
+.parallax-misija {
+    /* The image used */
+    background-image: url("../slike/misijaiciljevi.png");
+
+    /* Set a specific height */
+    width: 100%;
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-timovi {
+    /* The image used */
+    background-image: url("../slike/timovi.png");
+    /* Set a specific height */
+    width: 100%;
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax-kontakt {
+    /* The image used */
+    background-image: url("../slike/kontakt.png");
+    /* Set a specific height */
+    width: 100%;
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tim {
+    background-color: #212121;
+}
+
+.navbar {
+    display: none !important;
 }
 
 #nav {
@@ -24,6 +72,7 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
+    height: 90px;
 }
 
 
@@ -40,7 +89,7 @@ body {
 }
 
 #nav>ul>li>a:hover {
-    color: #db9df8;
+    color: #73246B;
     text-decoration-line: none;
 }
 
@@ -55,7 +104,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: #db9df8;
+    background: #73246B;
     transition: width .3s;
 }
 
@@ -70,19 +119,11 @@ body {
     cursor: pointer;
 }
 
-#animacija {
-    width: 500px;
-    height: 500px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 60px;
-    margin-bottom: 150px;
-}
-
 #o-nama {
     background-color: #212121;
     color: #606161;
-    padding: 50px 0;
+    padding: 60px 0;
+
 }
 
 #naslov-o-nama {
@@ -101,11 +142,11 @@ body {
 
 #containerPictures h2 {
     text-align: center;
-    color: #471d54;
+    color: #73246b;
 }
 
 #containerCounters {
-    color: #471d54;
+    color: #73246b;
     flex-wrap: nowrap;
     display: inline-block;
     clear: both;
@@ -119,6 +160,7 @@ body {
     display: inline-block;
     text-align: center;
     flex-wrap: nowrap;
+    color: #73246b;
 
 }
 
@@ -128,6 +170,8 @@ body {
     flex-wrap: nowrap;
     display: inline-block;
     text-align: center;
+    color: #73246b;
+
 }
 
 .teams {
@@ -136,6 +180,8 @@ body {
     flex-wrap: nowrap;
     text-align: center;
     display: inline-block;
+    color: #73246b;
+
 }
 
 #containerInfo {
@@ -160,69 +206,51 @@ footer {
 
 
 #misijaiciljevi {
-    background: white;
+
     overflow: hidden;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 150px;
     text-align: center;
+    font-size: 22px;
+}
+
+.centar {
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 #misija {
     padding-top: 30px;
     float: left;
-    color: #471d54;
+    color: white;
 }
 
 #ciljevi {
     padding-top: 30px;
-    color: #471d54;
+    color: white;
     float: right;
 }
 
-#zasto {
+.naslov-h2 {
+    font-size: 40px;
     padding-top: 30px;
-    background: #dbdde0;
-    overflow: hidden;
-    clear: both;
-    margin-bottom: 30px;
-}
-
-.zastosafon {
-    text-align: center;
-    height: 280px;
-    color: #471d54;
-}
-
-.projekti .clanovi-slika img {
-    width: 500px;
-    padding-top: 20px;
-}
-
-.projekti-tekst {
-    float: right;
-    color: #471d54;
-    text-align: center;
 }
 
 #fontv {
-    text-align: center;
-    color: #471d54;
+    color: #333;
     padding: 20px;
+    font-size: 20px;
+}
+
+.fontv-logo {
+    max-width: 350px;
 }
 
 #kartice {
     overflow: hidden;
-    background-color: #D0D0D0;
     padding-bottom: 50px;
     padding-top: 50px;
     border: 0;
-}
-
-#kartice h2 {
-    text-align: center;
-    color: #471d54;
-    font-size: 30px;
-    padding-bottom: 20px;
 }
 
 iframe {
@@ -259,17 +287,16 @@ iframe {
     color: gray;
 }
 
-.footer{
-    background-image: "slike/kontakt.png";
-}
+.footer {}
 
 footer .cr {
     font-size: 14px;
     margin: 0;
     padding-top: 10px;
+    color: white;
 }
 
-.org-cr{
+.org-cr {
     background-color: #212121;
 }
 
@@ -277,16 +304,16 @@ footer .cr {
     padding-bottom: 20px;
 }
 
-.uo{
-    color:white;
+.uo {
+    color: white;
     overflow: hidden;
-    background-color: #471d54;
+    background-color: #333;
     padding-bottom: 50px;
     padding-top: 50px;
     border: 0;
 }
 
-.uo h2{
+.uo h2 {
     padding-bottom: 20px;
 }
 
@@ -305,15 +332,21 @@ footer .cr {
 .front,
 .back {
     width: 320px;
-    height: 480px;
+    height: 320px;
 }
 
 /* flip speed goes here */
 .flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
-
+    margin-top: 60px;
     position: relative;
+}
+
+.f1,
+.f2,
+.f3 {
+    margin-top: 30px;
 }
 
 /* hide back of pane during swap */
@@ -339,16 +372,162 @@ footer .cr {
 
 }
 
-#slika{
+#slika {
     height: 450px;
 }
 
-@media only screen and (max-width: 800px) {
+
+
+
+#myCarousel {
+    max-width: 100%;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+#organizacija {
+    width: 100%;
+}
+
+#projekti {
+    padding-top: 50px;
+}
+
+.beli-tekst {
+    color: white;
+    padding-bottom: 20px;
+}
+
+#map {
+    height: 400px;
+}
+
+#rec {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+#rec img {
+    max-width: 300px;
+}
+
+#rec .col {
+    padding-top: 10px;
+}
+
+.titule {
+    color: rgb(115, 36, 107);
+}
+
+.naziv {
+    color: #333;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.david {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.nakonslike {
+    padding-top: 340px;
+}
+
+#uo {
+    padding-bottom: 50px;
+}
+
+.uo-naziv {
+    font-size: 22px;
+    color: white;
+}
+
+.uo-titula {
+    font-size: 19px;
+    color: #73246b;
+}
+
+a button {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #73246B;
+    background-color: white;
+    border-radius: 50px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover button {
+    background-color: #73246B;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #73246B;
+    color: white;
+}
+
+.siva {
+    background-color: #212121;
+    padding-top: 50px;
+}
+
+.siva-20 {
+    font-size: 20px;
+    color: rgb(85, 84, 84);
+}
+
+.slika-projekta img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.uo-slika {
+    max-width: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        border: 0;
+        display: block !important;
+        color: white !important;
+    }
+
+    .navbar button {
+        padding-top: 20px;
+    }
+
+    .first-button {
+        padding-top: 50px;
+        float: right;
+    }
+
+    .nav-item a {
+        color: white;
+        font-size: 20px;
+    }
+
+    .nav-item a:hover {
+        color: rgb(190, 190, 190) !important;
+        font-size: 20px;
+        border: 0;
+        text-decoration: none;
+    }
+
+    button {
+        padding-top: 30px;
+        outline: none;
+    }
+
     #nav {
         display: none;
     }
 
-    #slika{
+    #slika {
         height: 150px;
     }
 
@@ -358,12 +537,6 @@ footer .cr {
         padding-top: 0;
         margin: 0;
         padding-bottom: 100%;
-    }
-
-    .logo {
-        padding: 10px;
-        padding-bottom: 3px;
-        width: 150px;
     }
 
     .topnav {
@@ -382,10 +555,8 @@ footer .cr {
     /* Style navigation menu links */
     .topnav a {
         color: white;
-        padding: 5px 5px;
-        padding-right: 12px;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 30px;
         display: block;
     }
 
@@ -399,12 +570,12 @@ footer .cr {
 
     /* Add a grey background color on mouse-over */
     .topnav a:hover {
-        color: rgb(184, 56, 223);
+        color: rgb(122, 122, 122);
     }
 
     /* Style the active link (or home/logo) */
     .active {
-        background-color: rgb(184, 56, 223);
+        background-color: rgb(150, 150, 150);
         color: white;
     }
 
@@ -418,4 +589,206 @@ footer .cr {
         max-width: 350px;
     }
 
+}
+
+button {
+    outline: none;
+}
+
+.nav-item {
+    padding: 3px;
+}
+
+.nav-item a:hover {
+    background-color: #333;
+}
+
+.navbar-nav {
+    color: white;
+}
+
+.navbar {
+    background-color: #212121;
+    text-decoration: none;
+}
+
+.animated-icon1,
+.animated-icon2,
+.animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.animated-icon1 span,
+.animated-icon2 span,
+.animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.collapse {
+    background-color: #212121;
+}
+
+.animated-icon1 span {
+    background: #ffffff;
+}
+
+.animated-icon2 span {
+    background: #ffffff;
+}
+
+.animated-icon3 span {
+    background: rgb(255, 255, 255);
+}
+
+.animated-icon1 span:nth-child(1) {
+    top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+    top: 10px;
+}
+
+.animated-icon1 span:nth-child(3) {
+    top: 20px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+    top: 11px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+
+.animated-icon2 span:nth-child(1) {
+    top: 0px;
+}
+
+.animated-icon2 span:nth-child(2),
+.animated-icon2 span:nth-child(3) {
+    top: 10px;
+}
+
+.animated-icon2 span:nth-child(4) {
+    top: 20px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+/* Icon 4 */
+
+.animated-icon3 span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.animated-icon3 span:nth-child(2) {
+    top: 10px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.animated-icon3 span:nth-child(3) {
+    top: 20px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.animated-icon3.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0px;
+    left: 8px;
+}
+
+.animated-icon3.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.animated-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 21px;
+    left: 8px;
+}
+
+.bela{
+    background-color: white;
+    padding: 30px;
 }
